@@ -1,3 +1,192 @@
 [gd_scene format=3 uid="uid://ftprs6eff5va"]
 
-[node name="DemoHexaChessBoard" type="Node2D" unique_id=929284888]
+[ext_resource type="Texture2D" uid="uid://c8cvtf5v41ev3" path="res://addons/2026_06_15_gdp_hexa_chess/assets/3d/hexa_chess_board/hexa_chess_board_color_black_uv.png" id="1_mq8a4"]
+[ext_resource type="ArrayMesh" uid="uid://iy6l2ikq07kq" path="res://addons/2026_06_15_gdp_hexa_chess/assets/3d/hexa_chess_board/hexa_chess_board.obj" id="2_rml5p"]
+[ext_resource type="PackedScene" uid="uid://76r58cjcj8ri" path="res://addons/2026_06_15_gdp_hexa_chess/scene/prefab/prefab_chess_piece.tscn" id="3_v4rlx"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2xfop"]
+shading_mode = 0
+albedo_texture = ExtResource("1_mq8a4")
+
+[sub_resource type="BoxMesh" id="BoxMesh_qrdae"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_34fn8"]
+albedo_color = Color(0.9008019, 0.61388963, 0.33715135, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_fokqw"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qrdae"]
+size = Vector3(0.86383057, 0.013336182, 0.4902954)
+
+[node name="DemoHexaChessBoard" type="Node3D" unique_id=1542466207]
+
+[node name="HexaChessBoard" type="MeshInstance3D" parent="." unique_id=2083009808]
+transform = Transform3D(1.12, 0, 0, 0, 1.12, 0, 0, 0, 1.12, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_2xfop")
+mesh = ExtResource("2_rml5p")
+
+[node name="CubeMeter" type="MeshInstance3D" parent="." unique_id=97452471]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+visible = false
+mesh = SubResource("BoxMesh_qrdae")
+
+[node name="CylinderTable" type="MeshInstance3D" parent="." unique_id=435306410]
+transform = Transform3D(1, 0, 0, 0, 0.011408329, 0, 0, 0, 1, 0, -0.009216785, 0)
+visible = false
+material_override = SubResource("StandardMaterial3D_34fn8")
+mesh = SubResource("CylinderMesh_fokqw")
+
+[node name="BlackChessPiece" parent="." unique_id=2125660292 instance=ExtResource("3_v4rlx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.029153686, 0.083487704)
+
+[node name="BlackChessPieceBishop" parent="." unique_id=393315744 instance=ExtResource("3_v4rlx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.029153686, 0.24902944)
+piece_type = 1
+
+[node name="BlackChessPieceBishop2" parent="." unique_id=463082738 instance=ExtResource("3_v4rlx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.029153686, 0.3331282)
+piece_type = 1
+
+[node name="BlackChessPieceBishop3" parent="." unique_id=204314743 instance=ExtResource("3_v4rlx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.029153686, 0.42158008)
+piece_type = 1
+
+[node name="BlackChessPieceKnightR" parent="." unique_id=1633741374 instance=ExtResource("3_v4rlx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.14709722, 0.029153686, 0.33619428)
+piece_type = 2
+
+[node name="BlackChessPieceTowerR" parent="." unique_id=985632802 instance=ExtResource("3_v4rlx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.21771938, 0.029153686, 0.2927395)
+piece_type = 3
+
+[node name="BlackChessPieceTowerL" parent="." unique_id=193781990 instance=ExtResource("3_v4rlx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.22062632, 0.029153686, 0.2927395)
+piece_type = 3
+
+[node name="BlackChessPieceKnightL" parent="." unique_id=354627019 instance=ExtResource("3_v4rlx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.14417757, 0.029153686, 0.33619428)
+piece_type = 2
+
+[node name="BlackChessPieceQueen" parent="." unique_id=833380404 instance=ExtResource("3_v4rlx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.07284273, 0.029153686, 0.37854922)
+piece_type = 4
+
+[node name="BlackChessPieceKing" parent="." unique_id=428592029 instance=ExtResource("3_v4rlx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.072056055, 0.029153686, 0.37854922)
+piece_type = 5
+
+[node name="WhiteChessPiece" parent="." unique_id=1770476858 instance=ExtResource("3_v4rlx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.029153686, -0.080688655)
+piece_type = 6
+
+[node name="WhiteChessPieceBishop" parent="." unique_id=260455056 instance=ExtResource("3_v4rlx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.029153686, -0.2520929)
+piece_type = 7
+
+[node name="WhiteChessPieceBishop2" parent="." unique_id=2045314789 instance=ExtResource("3_v4rlx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.029153686, -0.3336648)
+piece_type = 7
+
+[node name="WhiteChessPieceBishop3" parent="." unique_id=714809187 instance=ExtResource("3_v4rlx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.029153686, -0.41936693)
+piece_type = 7
+
+[node name="WhiteChessPieceKnight" parent="." unique_id=941838352 instance=ExtResource("3_v4rlx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1445578, 0.029153686, -0.33572993)
+piece_type = 8
+
+[node name="WhiteChessPieceKnight2" parent="." unique_id=874090114 instance=ExtResource("3_v4rlx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.14559034, 0.029153686, -0.33572993)
+piece_type = 8
+
+[node name="WhiteChessPieceTower" parent="." unique_id=1830740224 instance=ExtResource("3_v4rlx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.21890175, 0.029153686, -0.29546025)
+piece_type = 9
+
+[node name="WhiteChessPieceTower2" parent="." unique_id=1045851262 instance=ExtResource("3_v4rlx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.21683669, 0.029153686, -0.29546025)
+piece_type = 9
+
+[node name="WhiteChessPieceKing" parent="." unique_id=1925232220 instance=ExtResource("3_v4rlx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.07434404, 0.029153686, -0.37909725)
+piece_type = 11
+
+[node name="WhiteChessPieceQueen" parent="." unique_id=1421787735 instance=ExtResource("3_v4rlx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.07331145, 0.029153686, -0.37909725)
+piece_type = 10
+
+[node name="WhiteChessPiece2" parent="." unique_id=410740832 instance=ExtResource("3_v4rlx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.071246386, 0.029153686, -0.12302345)
+piece_type = 6
+
+[node name="WhiteChessPiece3" parent="." unique_id=1035034692 instance=ExtResource("3_v4rlx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.14559036, 0.029153686, -0.16742334)
+piece_type = 6
+
+[node name="WhiteChessPiece4" parent="." unique_id=309866707 instance=ExtResource("3_v4rlx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.21786922, 0.029153686, -0.21079066)
+piece_type = 6
+
+[node name="WhiteChessPiece5" parent="." unique_id=1510569548 instance=ExtResource("3_v4rlx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.29118067, 0.029153686, -0.25312546)
+piece_type = 6
+
+[node name="WhiteChessPiece6" parent="." unique_id=1174810346 instance=ExtResource("3_v4rlx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.07227886, 0.029153686, -0.12508856)
+piece_type = 6
+
+[node name="WhiteChessPiece7" parent="." unique_id=553123484 instance=ExtResource("3_v4rlx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.14662284, 0.029153686, -0.16948844)
+piece_type = 6
+
+[node name="WhiteChessPiece8" parent="." unique_id=1235472013 instance=ExtResource("3_v4rlx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.21993428, 0.029153686, -0.21182325)
+piece_type = 6
+
+[node name="WhiteChessPiece9" parent="." unique_id=1368208971 instance=ExtResource("3_v4rlx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2911806, 0.029153686, -0.2551906)
+piece_type = 6
+
+[node name="BlackChessPiece2" parent="." unique_id=2040751833 instance=ExtResource("3_v4rlx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.073807955, 0.029153686, 0.12583652)
+
+[node name="BlackChessPiece3" parent="." unique_id=1193276176 instance=ExtResource("3_v4rlx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1451959, 0.029153686, 0.17181522)
+
+[node name="BlackChessPiece4" parent="." unique_id=336085457 instance=ExtResource("3_v4rlx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.22021385, 0.029153686, 0.21295406)
+
+[node name="BlackChessPiece5" parent="." unique_id=1595598443 instance=ExtResource("3_v4rlx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.29160184, 0.029153686, 0.25288296)
+
+[node name="BlackChessPiece6" parent="." unique_id=1067236433 instance=ExtResource("3_v4rlx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.071388066, 0.029153686, 0.1282564)
+
+[node name="BlackChessPiece7" parent="." unique_id=247915751 instance=ExtResource("3_v4rlx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.14640594, 0.029153686, 0.1681853)
+
+[node name="BlackChessPiece8" parent="." unique_id=26812651 instance=ExtResource("3_v4rlx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.21779394, 0.029153686, 0.20811418)
+
+[node name="BlackChessPiece9" parent="." unique_id=1385193236 instance=ExtResource("3_v4rlx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.29039192, 0.029153686, 0.24925299)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=786897844]
+transform = Transform3D(1, 0, 0, 0, 0.52664423, 0.85008574, 0, -0.85008574, 0.52664423, 0, 0.3024408, 0.19054843)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Camera3D" unique_id=1111253941]
+transform = Transform3D(1, 0, 0, 0, 0.9451258, 0.3267066, 0, -0.3267066, 0.9451258, 0, 0.0904541, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1275807355]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1454459744]
+transform = Transform3D(0.49999997, 0, 0.86602545, 0, 1, 0, -0.86602545, 0, 0.49999997, -0.0032490864, 0.0066986084, -0.0039549395)
+shape = SubResource("BoxShape3D_qrdae")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D" unique_id=14682493]
+transform = Transform3D(-0.5000001, 0, 0.8660254, 0, 1, 0, -0.8660254, 0, -0.5000001, -0.0032490864, 0.0066986084, -0.0039549395)
+shape = SubResource("BoxShape3D_qrdae")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="StaticBody3D" unique_id=419750810]
+transform = Transform3D(-1, 0, -1.4901161e-07, 0, 1, 0, 1.4901161e-07, 0, -1, -0.0032490864, 0.0066986084, -0.0039549395)
+shape = SubResource("BoxShape3D_qrdae")

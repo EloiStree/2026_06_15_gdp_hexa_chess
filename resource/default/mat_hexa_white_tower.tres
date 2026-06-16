@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://4ho6r4nq0ln4"]
+
+[ext_resource type="Texture2D" uid="uid://dn2re060vajce" path="res://addons/2026_06_15_gdp_hexa_chess/assets/2d/white_tower.png" id="1_ptbpq"]
+
+[resource]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+shading_mode = 0
+albedo_texture = ExtResource("1_ptbpq")

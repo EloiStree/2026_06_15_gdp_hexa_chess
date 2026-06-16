@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://crvw0gupq8rbs"]
+
+[ext_resource type="Texture2D" uid="uid://dcdb2xonmos8h" path="res://addons/2026_06_15_gdp_hexa_chess/assets/2d/black_tower.png" id="1_viqsv"]
+
+[resource]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+albedo_texture = ExtResource("1_viqsv")

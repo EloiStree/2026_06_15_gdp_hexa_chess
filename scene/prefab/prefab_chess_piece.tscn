@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://76r58cjcj8ri"]
+
+[ext_resource type="Script" uid="uid://dv344dtvbq38" path="res://addons/2026_06_15_gdp_hexa_chess/script/hexa_chess_set_mesh_with_material_from_enum.gd" id="1_o7ph4"]
+[ext_resource type="Script" uid="uid://3oyhdvy1rejn" path="res://addons/2026_06_15_gdp_hexa_chess/script/hexa_chess_rigid_body_piece_id_relay.gd" id="1_s3bo4"]
+[ext_resource type="Resource" uid="uid://ci7o7f8ky4neq" path="res://addons/2026_06_15_gdp_hexa_chess/resource/default/hexa_chess_default.tres" id="2_s3bo4"]
+[ext_resource type="Texture2D" uid="uid://c7yvaoyceuafa" path="res://addons/2026_06_15_gdp_hexa_chess/assets/2d/white_pawn.png" id="3_v7nlv"]
+[ext_resource type="Material" uid="uid://cmdkj4wo3x3u5" path="res://addons/2026_06_15_gdp_hexa_chess/resource/default/mat_black_wood_piece.tres" id="4_4px82"]
+[ext_resource type="ArrayMesh" uid="uid://nf4l7jpwf0fe" path="res://addons/2026_06_15_gdp_hexa_chess/assets/3d/cylinder/cylinder_chess_piece.obj" id="5_3ue7r"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kl1bw"]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+shading_mode = 0
+albedo_texture = ExtResource("3_v7nlv")
+
+[sub_resource type="QuadMesh" id="QuadMesh_2xfop"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_fymvp"]
+height = 0.008031845
+radius = 0.03125
+
+[node name="ChessPiece" type="RigidBody3D" unique_id=393315744]
+script = ExtResource("1_s3bo4")
+metadata/_custom_type_script = "uid://3oyhdvy1rejn"
+
+[node name="Code" type="Node" parent="." unique_id=1437655201]
+
+[node name="HexaChessSetMeshWithMaterialFromEnum" type="Node" parent="Code" unique_id=1916890273 node_paths=PackedStringArray("to_affect_mesh_piece", "to_affect_mesh_icon")]
+script = ExtResource("1_o7ph4")
+resource = ExtResource("2_s3bo4")
+to_affect_mesh_piece = NodePath("../../MeshCylinder")
+to_affect_mesh_icon = NodePath("../../MeshIconQuad")
+metadata/_custom_type_script = "uid://dv344dtvbq38"
+
+[node name="MeshIconQuad" type="MeshInstance3D" parent="." unique_id=964411636]
+transform = Transform3D(0.03, 0, 0, 0, -1.3113416e-09, 0.03, 0, -0.03, -1.3113416e-09, 0, 0.0030517578, -1.3339654e-10)
+material_override = SubResource("StandardMaterial3D_kl1bw")
+mesh = SubResource("QuadMesh_2xfop")
+
+[node name="MeshCylinder" type="MeshInstance3D" parent="." unique_id=711694970]
+transform = Transform3D(0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, 0, 0, 0)
+material_override = ExtResource("4_4px82")
+mesh = ExtResource("5_3ue7r")
+
+[node name="CylinderShape3D" type="CollisionShape3D" parent="." unique_id=1968218903]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.00015353039, 0)
+shape = SubResource("CylinderShape3D_fymvp")
+
+[connection signal="on_piece_type_relayed" from="." to="Code/HexaChessSetMeshWithMaterialFromEnum" method="set_with_enum"]

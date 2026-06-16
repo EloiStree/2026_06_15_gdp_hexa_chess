@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8cvtf5v41ev3"
-path.s3tc="res://.godot/imported/hexa_chess_board_color_black_uv.png-1607f3d8bc640cef325ef063d752861d.s3tc.ctex"
-path.etc2="res://.godot/imported/hexa_chess_board_color_black_uv.png-1607f3d8bc640cef325ef063d752861d.etc2.ctex"
+uid="uid://figyc5oxg41c"
+path.s3tc="res://.godot/imported/cylinder_chess_piece_color_black_uv.png-70301f226b8c0788510f69417a9f0de5.s3tc.ctex"
+path.etc2="res://.godot/imported/cylinder_chess_piece_color_black_uv.png-70301f226b8c0788510f69417a9f0de5.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://addons/2026_06_15_gdp_hexa_chess/assets/3d/hexa_chess_board_color_black_uv.png"
-dest_files=["res://.godot/imported/hexa_chess_board_color_black_uv.png-1607f3d8bc640cef325ef063d752861d.s3tc.ctex", "res://.godot/imported/hexa_chess_board_color_black_uv.png-1607f3d8bc640cef325ef063d752861d.etc2.ctex"]
+source_file="res://addons/2026_06_15_gdp_hexa_chess/assets/3d/cylinder/cylinder_chess_piece_color_black_uv.png"
+dest_files=["res://.godot/imported/cylinder_chess_piece_color_black_uv.png-70301f226b8c0788510f69417a9f0de5.s3tc.ctex", "res://.godot/imported/cylinder_chess_piece_color_black_uv.png-70301f226b8c0788510f69417a9f0de5.etc2.ctex"]
 
 [params]
 

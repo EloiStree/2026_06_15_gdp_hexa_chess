@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://75a311sa7p80"]
+
+[ext_resource type="Texture2D" uid="uid://bj41sedkwv1me" path="res://addons/2026_06_15_gdp_hexa_chess/assets/2d/black_pawn.png" id="1_ku6un"]
+
+[resource]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+albedo_texture = ExtResource("1_ku6un")

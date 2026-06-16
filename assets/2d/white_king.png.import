@@ -2,20 +2,22 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djj8a6ul5la7x"
-path="res://.godot/imported/hexa_chess_board_uv.png-95abb0be63decc919c40da56e0c16d4a.ctex"
+uid="uid://bipce12bq1kk5"
+path.s3tc="res://.godot/imported/white_king.png-f57196e978b5fcfa18529d3f929eb19b.s3tc.ctex"
+path.etc2="res://.godot/imported/white_king.png-f57196e978b5fcfa18529d3f929eb19b.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
-source_file="res://addons/2026_06_15_gdp_hexa_chess/assets/3d/hexa_chess_board_uv.png"
-dest_files=["res://.godot/imported/hexa_chess_board_uv.png-95abb0be63decc919c40da56e0c16d4a.ctex"]
+source_file="res://addons/2026_06_15_gdp_hexa_chess/assets/2d/white_king.png"
+dest_files=["res://.godot/imported/white_king.png-f57196e978b5fcfa18529d3f929eb19b.s3tc.ctex", "res://.godot/imported/white_king.png-f57196e978b5fcfa18529d3f929eb19b.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
@@ -23,7 +25,7 @@ compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=false
+mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
@@ -37,4 +39,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=1
+detect_3d/compress_to=0

@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cmdkj4wo3x3u5"]
+
+[ext_resource type="Texture2D" uid="uid://figyc5oxg41c" path="res://addons/2026_06_15_gdp_hexa_chess/assets/3d/cylinder/cylinder_chess_piece_color_black_uv.png" id="1_3y1cw"]
+
+[resource]
+shading_mode = 0
+albedo_texture = ExtResource("1_3y1cw")

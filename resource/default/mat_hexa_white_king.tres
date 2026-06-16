@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cjahovrvkg8r2"]
+
+[ext_resource type="Texture2D" uid="uid://bipce12bq1kk5" path="res://addons/2026_06_15_gdp_hexa_chess/assets/2d/white_king.png" id="1_yqpcc"]
+
+[resource]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+shading_mode = 0
+albedo_texture = ExtResource("1_yqpcc")

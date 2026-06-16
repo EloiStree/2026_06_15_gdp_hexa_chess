@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="HexaChessMaterialPieceResource" format=3 uid="uid://ci7o7f8ky4neq"]
+
+[ext_resource type="Script" uid="uid://d02mkx0l58k4b" path="res://addons/2026_06_15_gdp_hexa_chess/script/hexa_chess_material_piece_resource.gd" id="1_ptnyw"]
+[ext_resource type="Material" uid="uid://le8ynjdal7tr" path="res://addons/2026_06_15_gdp_hexa_chess/resource/default/mat_hexa_black_bishop.tres" id="1_wwe6t"]
+[ext_resource type="Material" uid="uid://bkllvws3amtqd" path="res://addons/2026_06_15_gdp_hexa_chess/resource/default/mat_hexa_black_king.tres" id="2_33fov"]
+[ext_resource type="Material" uid="uid://beilawpocxl1k" path="res://addons/2026_06_15_gdp_hexa_chess/resource/default/mat_hexa_black_knight.tres" id="3_lrfcr"]
+[ext_resource type="Material" uid="uid://75a311sa7p80" path="res://addons/2026_06_15_gdp_hexa_chess/resource/default/mat_hexa_black_pawn.tres" id="4_q43kf"]
+[ext_resource type="Material" uid="uid://33x5y21oeby7" path="res://addons/2026_06_15_gdp_hexa_chess/resource/default/mat_hexa_black_piece.tres" id="5_o83kx"]
+[ext_resource type="Material" uid="uid://bsa4bkhn0byoc" path="res://addons/2026_06_15_gdp_hexa_chess/resource/default/mat_hexa_black_queen.tres" id="6_3jfpo"]
+[ext_resource type="Material" uid="uid://crvw0gupq8rbs" path="res://addons/2026_06_15_gdp_hexa_chess/resource/default/mat_hexa_black_tower.tres" id="7_k23wd"]
+[ext_resource type="Material" uid="uid://bm0fmxcpd8syw" path="res://addons/2026_06_15_gdp_hexa_chess/resource/default/mat_hexa_white_bishop.tres" id="8_hr5ot"]
+[ext_resource type="Material" uid="uid://cjahovrvkg8r2" path="res://addons/2026_06_15_gdp_hexa_chess/resource/default/mat_hexa_white_king.tres" id="9_6i5qa"]
+[ext_resource type="Material" uid="uid://biulm1cv6uo23" path="res://addons/2026_06_15_gdp_hexa_chess/resource/default/mat_hexa_white_knight.tres" id="10_rftbv"]
+[ext_resource type="Material" uid="uid://4uhiykpd4uf3" path="res://addons/2026_06_15_gdp_hexa_chess/resource/default/mat_hexa_white_pawn.tres" id="11_41pks"]
+[ext_resource type="Material" uid="uid://qbhpq8u72m67" path="res://addons/2026_06_15_gdp_hexa_chess/resource/default/mat_hexa_white_piece.tres" id="12_yb4ii"]
+[ext_resource type="Material" uid="uid://bkjfy7ayibkme" path="res://addons/2026_06_15_gdp_hexa_chess/resource/default/mat_hexa_white_queen.tres" id="13_87jhd"]
+[ext_resource type="Material" uid="uid://4ho6r4nq0ln4" path="res://addons/2026_06_15_gdp_hexa_chess/resource/default/mat_hexa_white_tower.tres" id="14_kqe3q"]
+
+[resource]
+script = ExtResource("1_ptnyw")
+_mat_white_piece = ExtResource("12_yb4ii")
+_mat_black_piece = ExtResource("5_o83kx")
+_mat_white_pawn = ExtResource("11_41pks")
+_mat_white_bishop = ExtResource("8_hr5ot")
+_mat_white_knight = ExtResource("10_rftbv")
+_mat_white_tower = ExtResource("14_kqe3q")
+_mat_white_king = ExtResource("9_6i5qa")
+_mat_white_queen = ExtResource("13_87jhd")
+_mat_black_pawn = ExtResource("4_q43kf")
+_mat_black_bishop = ExtResource("1_wwe6t")
+_mat_black_knight = ExtResource("3_lrfcr")
+_mat_black_tower = ExtResource("7_k23wd")
+_mat_black_king = ExtResource("2_33fov")
+_mat_black_queen = ExtResource("6_3jfpo")
+metadata/_custom_type_script = "uid://d02mkx0l58k4b"
