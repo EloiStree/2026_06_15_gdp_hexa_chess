@@ -1,3 +1,9 @@
+**Add to a git project:**
+```
+git submodule add https://github.com/EloiStree/2026_06_15_gdp_hexa_chess.git addons/2026_06_15_gdp_hexa_chess
+```
+
+
 # 2026_06_15_gdp_hexa_chess
 
 <img width="720"  alt="image" src="https://github.com/user-attachments/assets/51cdf997-4739-4154-8e4c-fb29a07452c5" />
