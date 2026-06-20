@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bjdiy1erxlmu8"
 path.s3tc="res://.godot/imported/white_bishop.png-765c8eb55b17e35c58d315361a78c86b.s3tc.ctex"
-path.etc2="res://.godot/imported/white_bishop.png-765c8eb55b17e35c58d315361a78c86b.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://addons/2026_06_15_gdp_hexa_chess/assets/2d/white_bishop.png"
-dest_files=["res://.godot/imported/white_bishop.png-765c8eb55b17e35c58d315361a78c86b.s3tc.ctex", "res://.godot/imported/white_bishop.png-765c8eb55b17e35c58d315361a78c86b.etc2.ctex"]
+dest_files=["res://.godot/imported/white_bishop.png-765c8eb55b17e35c58d315361a78c86b.s3tc.ctex"]
 
 [params]
 

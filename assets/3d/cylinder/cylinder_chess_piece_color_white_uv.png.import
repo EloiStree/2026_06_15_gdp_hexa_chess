@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cnud7b2i4wcty"
 path.s3tc="res://.godot/imported/cylinder_chess_piece_color_white_uv.png-1e2097937e7b6fa6121159ecc5d83aeb.s3tc.ctex"
-path.etc2="res://.godot/imported/cylinder_chess_piece_color_white_uv.png-1e2097937e7b6fa6121159ecc5d83aeb.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://addons/2026_06_15_gdp_hexa_chess/assets/3d/cylinder/cylinder_chess_piece_color_white_uv.png"
-dest_files=["res://.godot/imported/cylinder_chess_piece_color_white_uv.png-1e2097937e7b6fa6121159ecc5d83aeb.s3tc.ctex", "res://.godot/imported/cylinder_chess_piece_color_white_uv.png-1e2097937e7b6fa6121159ecc5d83aeb.etc2.ctex"]
+dest_files=["res://.godot/imported/cylinder_chess_piece_color_white_uv.png-1e2097937e7b6fa6121159ecc5d83aeb.s3tc.ctex"]
 
 [params]
 

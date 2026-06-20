@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bipce12bq1kk5"
 path.s3tc="res://.godot/imported/white_king.png-f57196e978b5fcfa18529d3f929eb19b.s3tc.ctex"
-path.etc2="res://.godot/imported/white_king.png-f57196e978b5fcfa18529d3f929eb19b.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://addons/2026_06_15_gdp_hexa_chess/assets/2d/white_king.png"
-dest_files=["res://.godot/imported/white_king.png-f57196e978b5fcfa18529d3f929eb19b.s3tc.ctex", "res://.godot/imported/white_king.png-f57196e978b5fcfa18529d3f929eb19b.etc2.ctex"]
+dest_files=["res://.godot/imported/white_king.png-f57196e978b5fcfa18529d3f929eb19b.s3tc.ctex"]
 
 [params]
 

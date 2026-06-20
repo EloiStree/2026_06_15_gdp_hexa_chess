@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bw51rkfkf26lu"
 path.s3tc="res://.godot/imported/hexa_chess_board_color_uv.png-ee3b86e9d2b375c3f3da537f0f428f37.s3tc.ctex"
-path.etc2="res://.godot/imported/hexa_chess_board_color_uv.png-ee3b86e9d2b375c3f3da537f0f428f37.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://addons/2026_06_15_gdp_hexa_chess/assets/3d/hexa_chess_board/hexa_chess_board_color_uv.png"
-dest_files=["res://.godot/imported/hexa_chess_board_color_uv.png-ee3b86e9d2b375c3f3da537f0f428f37.s3tc.ctex", "res://.godot/imported/hexa_chess_board_color_uv.png-ee3b86e9d2b375c3f3da537f0f428f37.etc2.ctex"]
+dest_files=["res://.godot/imported/hexa_chess_board_color_uv.png-ee3b86e9d2b375c3f3da537f0f428f37.s3tc.ctex"]
 
 [params]
 

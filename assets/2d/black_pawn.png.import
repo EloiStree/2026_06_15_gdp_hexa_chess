@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bj41sedkwv1me"
 path.s3tc="res://.godot/imported/black_pawn.png-b10a22c81076cba7b8b31b2eccb323e4.s3tc.ctex"
-path.etc2="res://.godot/imported/black_pawn.png-b10a22c81076cba7b8b31b2eccb323e4.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://addons/2026_06_15_gdp_hexa_chess/assets/2d/black_pawn.png"
-dest_files=["res://.godot/imported/black_pawn.png-b10a22c81076cba7b8b31b2eccb323e4.s3tc.ctex", "res://.godot/imported/black_pawn.png-b10a22c81076cba7b8b31b2eccb323e4.etc2.ctex"]
+dest_files=["res://.godot/imported/black_pawn.png-b10a22c81076cba7b8b31b2eccb323e4.s3tc.ctex"]
 
 [params]
 
